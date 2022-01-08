@@ -24,6 +24,10 @@ public class Program {
 		Department department = new Department(2, null);
 		List<Seller> list = sellerDao.findByDepartment(department);
 		
+		/*Sem declaração na lista abaixo pois estou reaproveitando a de cima*/
+		System.out.println("===Teste 3: seller findAll===");
+		list = sellerDao.findAll();
+		
 		for (Seller obj : list) {
 			System.out.println(obj);
 		}
